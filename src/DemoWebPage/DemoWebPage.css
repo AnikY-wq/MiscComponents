@@ -1,0 +1,68 @@
+/* General styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.demo-webpage {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light mode styles */
+.demo-webpage.light {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+/* Dark mode styles */
+.demo-webpage.dark {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: inherit;
+  transition: background-color 0.3s ease;
+}
+
+.dark-mode-toggle {
+  display: flex;
+  align-items: center;
+}
+
+.app-title {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+/* Content styles */
+.content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .app-title {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+}

@@ -3,18 +3,10 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import DarkMode from "./DarkMode/DarkMode";
+import DemoWebPage from "./DemoWebPage/DemoWebPage";
 
 function App() {
-  const [mode, setMode] = useState("light");
-
-  return (
-    <>
-      <DarkMode
-        mode={mode}
-        onClick={() => setMode(mode === "light" ? "dark" : "light")}
-      />
-    </>
-  );
+  return <DemoWebPage />;
 }
 
 export default App;
