@@ -1,12 +1,29 @@
-# React + Vite
+# Miscellaneous Components
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository is a collection of various reusable and experimental components built using React. The goal is to explore and implement different UI/UX ideas and functionalities that can be reused across projects.
 
-Currently, two official plugins are available:
+## Purpose
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The repository serves as a playground for trying out and building miscellaneous components. Each component is designed to be modular, responsive, and customizable. The first component in this repository is the `DarkMode` toggle.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Components
+
+### 1. DarkMode Component
+
+The `DarkMode` component is a simple toggle that allows users to switch between light and dark modes. It uses a sun and moon icon to visually represent the modes.
+
+#### Features
+
+- **Responsive Design:** Adjusts to different screen sizes.
+- **Accessible:** Includes `aria-label` for better accessibility.
+- **Customizable:** Easily styled to fit your application's theme.
+- **Interactive Effects:** Smooth hover and active effects for better user experience.
+
+#### Usage
+
+1. Import the `DarkMode` component:
+   ```jsx
+   import DarkMode from "./src/DarkMode/DarkMode";
+   ```
